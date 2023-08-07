@@ -1,0 +1,14 @@
+20230807	11:14:29	15d642c7-6776-4fea-8e64-57bba9fdd65b	/new-page	GET 
+20230807	11:14:29	8dda6a63-8ddb-494f-9e0d-b1cbe730757d	/css/styles.css	GET 
+20230807	11:14:29	bfaa1f1c-0efc-4e27-8cfe-035a539a61a2	/img/img1.jpg	GET 
+20230807	11:14:47	d79c6dd4-69af-47e3-9fe8-e2d46baba46c	/old	GET 
+20230807	11:14:47	c1447e4f-27c6-4a93-973e-e224b8ef6701	/css/styles.css	GET 
+20230807	11:15:38	2e05b91f-6ad7-4a97-b181-3aa6b1a5faed	/old	GET 
+20230807	11:16:09	544e814a-b82c-40dc-8f91-d07e123c0ea5	/old	GET 
+20230807	11:16:09	22d2e699-1368-420c-b13b-bdd73d54a8ef	/css/styles.css	GET 
+20230807	11:16:14	7cd6fd4b-ac87-40e8-ad8f-febcaf81aa38	/new-page	GET 
+20230807	11:16:14	78e183fc-448e-4b0b-97e7-56fb6f903485	/css/styles.css	GET 
+20230807	11:16:14	ef398bb9-85e0-4015-9494-a8a7dac51380	/img/img1.jpg	GET 
+20230807	12:08:23	f8df25bd-0bfc-46a1-aca5-e9857aa0be3b	/new-page	GET 
+20230807	12:08:23	8f546c32-b5ad-4836-a39c-af8867cfb43f	/css/styles.css	GET 
+20230807	12:08:23	ee063651-7e0e-492b-b967-3985aa96da66	/img/img1.jpg	GET 
