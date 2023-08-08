@@ -1,2 +1,10 @@
 2023-08-07	20:47:12	36666985-405d-453e-946e-f837ab1f47f0	Error: not allowed by CORS 
 2023-08-07	20:47:26	0c1c702f-7f7a-495d-a540-0c03cbfb4ef6	Error: not allowed by CORS 
+2023-08-08	11:33:20	ece76736-a585-492a-9e5d-fc2c0fa18cf9	Error: ENOENT: no such file or directory, stat '/home/joaopaulosf/documents/github/nodejs-full/routes/views/index.html' 
+2023-08-08	11:50:46	1bc3c954-534f-4d21-8a0c-0ee5e71993c9	TypeError: res.josn is not a function 
+2023-08-08	11:52:04	08125b82-5a20-457e-a110-0857ad211540	TypeError: res.josn is not a function 
+2023-08-08	11:52:47	375cf7d8-5228-4cd2-bae7-db1cd3d2b10a	TypeError: res.josn is not a function 
+2023-08-08	11:59:49	42915cce-8971-4bc0-bfee-bd04545ce4c0	TypeError: res.josn is not a function 
+2023-08-08	12:03:50	c3d6af17-7b23-4425-8911-a1644c1628f5	TypeError: res.josn is not a function 
+2023-08-08	12:04:10	44e399b3-eba1-4b89-94b2-29a8b75f356f	TypeError: res.josn is not a function 
+2023-08-08	12:05:09	bfa36e91-a370-4958-81d8-f3a1e21173f5	TypeError: res.josn is not a function 

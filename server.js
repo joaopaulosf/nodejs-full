@@ -1,7 +1,9 @@
 const express = require("express");
 const cors = require("cors");
 const path = require("path");
-const routes = require("./routes");
+const subdir = require("./routes/subdir");
+const root = require("./routes/root");
+const employees = require("./routes/api/employees");
 const app = express();
 const { logger } = require("./middleware/logEvents");
 const errorHandler = require("./middleware/errorHandler");
@@ -35,54 +37,12 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
 // Serve static files
-// app.use(express.static(path.join(__dirname, "/public")));
 app.use("/", express.static("public"));
 
-app.use("/subdir", routes);
-
-app.get("^/$|/index(.html)?", (req, res) => {
-  res.sendFile(path.join(__dirname, "views", "index.html"));
-});
-
-app.get("/new-page(.html)?", (req, res) => {
-  res.sendFile(path.join(__dirname, "views", "new-page.html"));
-});
-
-app.get("/old-page(.html)?", (req, res) => {
-  res.redirect(301, "new-page.html"); // 302 by default
-});
-
-// Router handlers
-
-app.get(
-  "/hello(.html)?",
-  (req, res, next) => {
-    console.log("attempted to load hello.html");
-    next();
-  },
-  (req, res) => {
-    res.send("Hello World");
-  }
-);
-
-// Chaining route handlers
-
-const one = (req, res, next) => {
-  console.log("One");
-  next();
-};
-
-const two = (req, res, next) => {
-  console.log("Two");
-  next();
-};
-
-const three = (req, res) => {
-  console.log("Three");
-  res.send("Finished!");
-};
-
-app.get("/chain(.html)?", [one, two, three]);
+// Routes
+app.use("/", root);
+app.use("/subdir", subdir);
+app.use("/employees", employees);
 
 app.all("*", (req, res) => {
   res.status(404);
