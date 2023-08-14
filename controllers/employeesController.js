@@ -45,7 +45,7 @@ const updateEmployee = (req, res) => {
     (employee) => employee.id !== parseInt(req.body.id)
   );
   const unsortedArray = [...filteredArray, employee];
-  data.setEmployees(unsortedArray.sort((a, b) => a.id - b.id)); //check on tests
+  data.setEmployees(unsortedArray.sort((a, b) => a.id - b.id));
   res.json(data.employees);
 };
 
@@ -63,7 +63,7 @@ const deleteEmployee = (req, res) => {
   const filteredArray = data.employees.filter(
     (employee) => employee.id !== parseInt(req.body.id)
   );
-  data.setEmployees([...filteredArray]); //check on tests
+  data.setEmployees([...filteredArray]);
   res.json(data.employees);
 };
 

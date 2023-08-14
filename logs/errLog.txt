@@ -13,3 +13,7 @@
 2023-08-09	10:59:39	1b4aa4c6-da63-4a5a-a392-4cf45d8f7ded	SyntaxError: Unexpected token , in JSON at position 43 
 2023-08-09	11:00:35	6dce3f3d-2e36-45bc-a5e1-53f3a4031bd6	SyntaxError: Unexpected token , in JSON at position 43 
 2023-08-09	11:06:50	65fc58ba-b043-4e5c-b893-eeef248b4149	TypeError: employee.filter is not a function 
+2023-08-09	11:49:23	c89b6e2b-850b-4f6e-9010-b1c5fa07b4a4	TypeError: data.employees.find is not a function 
+2023-08-09	11:49:40	68ec7c87-55c7-433b-b146-2258af57d89a	TypeError: Cannot read properties of undefined (reading 'id') 
+2023-08-09	11:49:47	b2663b6f-889e-49e0-a4f9-06266c718bc9	TypeError: Cannot read properties of undefined (reading 'id') 
+2023-08-09	11:49:50	65449c2b-d4bc-40ee-b83a-31c167385cef	TypeError: data.employees.find is not a function 
