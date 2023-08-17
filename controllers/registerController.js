@@ -9,7 +9,9 @@ const handleNewUser = async (req, res) => {
       .json({ message: "Username and password are required." });
   // check for duplicate usernames in the db
   const duplicate = await User.findOne({ username: user }).exec();
-  if (duplicate) return res.status(409).json({ message: "User already exist" }); //Conflict
+  if (duplicate) {
+    return res.status(409).json({ message: "User already exist" });
+  } //Conflict
   try {
     //encrypt the password
     const hashedPwd = await bcrypt.hash(pwd, 10);

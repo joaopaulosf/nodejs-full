@@ -3,10 +3,6 @@ const express = require("express");
 const cors = require("cors");
 const corsOptions = require("./config/corsOptions");
 const path = require("path");
-const root = require("./routes/root");
-const employees = require("./routes/api/employees");
-const register = require("./routes/register");
-const auth = require("./routes/auth");
 const app = express();
 const { logger } = require("./middleware/logEvents");
 const errorHandler = require("./middleware/errorHandler");
@@ -16,6 +12,12 @@ const credentials = require("./middleware/credentials");
 const mongoose = require("mongoose");
 const connectDB = require("./config/dbConn");
 const PORT = process.env.PORT || 3500;
+
+// Routes
+const root = require("./routes/root");
+const employees = require("./routes/api/employees");
+const register = require("./routes/register");
+const auth = require("./routes/auth");
 
 // Connect to MongoDB
 connectDB();
