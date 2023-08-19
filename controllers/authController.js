@@ -44,7 +44,7 @@ const handleLogin = async (req, res) => {
     res.json({ accessToken });
   } else {
     res.sendStatus(401);
-    console.log("to test commits again");
+    console.log("to test commits again.");
   }
 };
 
